@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- my rules style -->
+  <link rel="stylesheet" href="styleRules.css">
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- fontawesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>3book</title>
+</head>
+<body>
+  <!-- navbar -->
+  <nav class = "navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
+    <div class = "container">
+        <a class = "navbar-brand" href = "index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book-half" viewBox="0 0 16 16">
+                <path d="M8.5 2.687c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+            </svg>
+            <p class="name-logo"><span>3</span>book</p>
+        </a>
+        <!--Right buttons -->
+        <div class = "order-lg-2 nav-btns">
+            <button type = "button" class = "btn">
+                <i class = "fa fa-search btnsearch"></i>
+            </button>
+            <button type = "button" class = "btn">
+                <div class="box-btn">
+                    <i class = "fa fa-shopping-cart"></i>
+                    <div class = "btn-num">3</div>
+                </div>
+            </button>
+            <button type = "button" class = "btn">
+                <div class="box-btn">
+                    <i class = "fa fa-heart"></i>
+                    <div class = "btn-num">7</div>
+                </div>
+            </button>
+            <button type = "button" class = "btn">
+                <i class = "fa fa-user-circle"></i>
+            </button>
+        </div>
+        <!--End right buttons -->
+        <button class = "navbar-toggler border-0" type = "button" data-bs-toggle = "collapse" data-bs-target = "#navMenu">
+            <span class = "navbar-toggler-icon"></span>
+        </button>
+        <!--Nav section-->
+        <div class = "collapse navbar-collapse order-lg-1" id = "navMenu">
+            <ul class = "navbar-nav mx-auto text-center">
+                <li class = "nav-item px-2 py-2">
+                    <a class = "nav-link text-uppercase text-dark" href = "#header">inico</a>
+                </li>
+                <li class = "nav-item px-2 py-2">
+                    <a class = "nav-link text-uppercase text-dark" href = "#libros">libros</a>
+                </li>
+                <li class = "nav-item px-2 py-2">
+                    <a class = "nav-link text-uppercase text-dark" href = "#novedades">novedades</a>
+                </li>
+                <li class = "nav-item px-2 py-2">
+                    <a class = "nav-link text-uppercase text-dark" href = "#destacados">destacados</a>
+                </li>
+                <li class = "nav-item px-2 py-2 border-0">
+                    <a class = "nav-link text-uppercase text-dark" href = "#blogs">blogs</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+  </nav>
+  <!-- end of navbar -->
+  <!-- header -->
+  <header id = "header" class = "vh-100 carousel slide" data-bs-ride = "carousel" style = "padding-top: 115px;">
+    <div class = "container h-100 d-flex align-items-center carousel-inner">
+        <div class = "text-center carousel-item active">
+            <h2 class = "text-white">del 24 al 30 de Octubre</h2>
+            <h1 class = "text-uppercase py-2 fw-bold text-white">Ofertas Flash</h1>
+            <a href = "#" class = "btn mt-3 text-uppercase">Compra aquí</a>
+        </div>
+        <div class = "text-center carousel-item">
+            <h2 class = "text-white">del 2 al 10 de Noviembre</h2>
+            <h1 class = "text-uppercase py-2 fw-bold text-white">Preventa</h1>
+            <a href = "#" class = "btn mt-3 text-uppercase">Reserva aquí</a>
+        </div>
+    </div>
+
+    <button class = "carousel-control-prev" type = "button" data-bs-target="#header" data-bs-slide = "prev">
+        <span class = "carousel-control-prev-icon"></span>
+    </button>
+    <button class = "carousel-control-next" type = "button" data-bs-target="#header" data-bs-slide = "next">
+        <span class = "carousel-control-next-icon"></span>
+    </button>
+  </header>
+  <!-- end of header -->
+  <!-- libros -->
+  <section id = "libros" class = "py-5">
+    <div class = "container">
+        <div class = "title text-center">
+            <h2 class = "position-relative d-inline-block">Libros</h2>
+        </div>
+
+        <div class = "row g-0">
+            <div class = "d-flex flex-wrap justify-content-center mt-5 filter-button-group">
+                <button type = "button" class = "btn m-2 text-dark active-filter-btn" data-filter = "*">Ficción</button>
+                <button type = "button" class = "btn m-2 text-dark" data-filter = ".best">No Ficción</button>
+                <button type = "button" class = "btn m-2 text-dark" data-filter = ".feat">Infantil</button>
+                <button type = "button" class = "btn m-2 text-dark" data-filter = ".new">Juvenil</button>
+            </div>
+
+            <div class = "collection-list mt-4 row gx-0 gy-3">
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2 best">
+                    <div class = "collection-img position-relative">
+                        <img src = "img/fic1.jpg" class = "w-100">
+                        <span class = "position-absolute text-white d-flex align-items-center justify-content-center salespan">30%</span>
+                    </div>
+                    <div class = "text-center">
+                        <div class = "rating mt-3">
+                            <span class = "pstar"><i class = "fas fa-star"></i></span>
+                            <span class = "pstar"><i class = "fas fa-star"></i></span>
+                            <span class = "pstar"><i class = "fas fa-star"></i></span>
+                            <span class = "pstar"><i class = "fas fa-star"></i></span>
+                            <span class = "nstar"><i class = "fas fa-star"></i></span>
+                        </div>
+                        <p class = "text-capitalize my-1">Roma soy yo</p>
+                        <span class = "fw-bold">S/ 45.50</span>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2 feat">
+                    <div class = "collection-img position-relative">
+                        <img src = "img/fic2.jpg" class = "w-100">
+                        <span class = "position-absolute text-white d-flex align-items-center justify-content-center salespan">10%</span>
+                    </div>
+                    <div class = "text-center">
+                        <div class = "rating mt-3">
+                            <span class = "pstar"><i class = "fas fa-star"></i></span>
+                            <span class = "pstar"><i class = "fas fa-star"></i></span>
+                            <span class = "pstar"><i class = "fas fa-star"></i></span>
+                            <span class = "pstar"><i class = "fas fa-star"></i></span>
+                            <span class = "pstar"><i class = "fas fa-star"></i></span>
+                        </div>
+                        <p class = "text-capitalize my-1">Los siete maridos de evelyn hugo</p>
+                        <span class = "fw-bold">S/ 95.50</span>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2 new">
+                    <div class = "collection-img position-relative">
+                        <img src = "img/fic3.jpg" class = "w-100">
+                        <span class = "position-absolute text-white d-flex align-items-center justify-content-center salespan">10%</span>
+                    </div>
+                    <div class = "text-center">
+                        <div class = "rating mt-3">
+                            <span class = "pstar"><i class = "fas fa-star"></i></span>
+                            <span class = "pstar"><i class = "fas fa-star"></i></span>
+                            <span class = "pstar"><i class = "fas fa-star"></i></span>
+                            <span class = "pstar"><i class = "fas fa-star"></i></span>
+                            <span class = "pstar"><i class = "fas fa-star"></i></span>
+                        </div>
+                        <p class = "text-capitalize my-1">el psicoanalista</p>
+                        <span class = "fw-bold">S/ 35.50</span>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2 best">
+                    <div class = "collection-img position-relative">
+                        <img src = "img/fic4.jpg" class = "w-100">
+                        <span class = "position-absolute text-white d-flex align-items-center justify-content-center salespan">50%</span>
+                    </div>
+                    <div class = "text-center">
+                        <div class = "rating mt-3">
+                            <span class = "pstar"><i class = "fas fa-star"></i></span>
+                            <span class = "pstar"><i class = "fas fa-star"></i></span>
+                            <span class = "pstar"><i class = "fas fa-star"></i></span>
+                            <span class = "pstar"><i class = "fas fa-star"></i></span>
+                            <span class = "pstar"><i class = "fas fa-star"></i></span>
+                        </div>
+                        <p class = "text-capitalize my-1">el espía del inca</p>
+                        <span class = "fw-bold">S/ 15.50</span>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2 feat">
+                    <div class = "collection-img position-relative">
+                        <img src = "img/fic5.jpg" class = "w-100">
+                        <span class = "position-absolute text-white d-flex align-items-center justify-content-center salespan">20%</span>
+                    </div>
+                    <div class = "text-center">
+                        <div class = "rating mt-3">
+                            <span class = "pstar"><i class = "fas fa-star"></i></span>
+                            <span class = "pstar"><i class = "fas fa-star"></i></span>
+                            <span class = "pstar"><i class = "fas fa-star"></i></span>
+                            <span class = "pstar"><i class = "fas fa-star"></i></span>
+                            <span class = "pstar"><i class = "fas fa-star"></i></span>
+                        </div>
+                        <p class = "text-capitalize my-1">abril rojo</p>
+                        <span class = "fw-bold">S/ 55.50</span>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2 new">
+                    <div class = "collection-img position-relative">
+                        <img src = "img/fic6.jpg" class = "w-100">
+                        <span class = "position-absolute text-white d-flex align-items-center justify-content-center salespan">65%</span>
+                    </div>
+                    <div class = "text-center">
+                        <div class = "rating mt-3">
+                            <span class = "pstar"><i class = "fas fa-star"></i></span>
+                            <span class = "pstar"><i class = "fas fa-star"></i></span>
+                            <span class = "pstar"><i class = "fas fa-star"></i></span>
+                            <span class = "nstar"><i class = "fas fa-star"></i></span>
+                            <span class = "nstar"><i class = "fas fa-star"></i></span>
+                        </div>
+                        <p class = "text-capitalize my-1">orgullo y prejuicio</p>
+                        <span class = "fw-bold">S/ 5.50</span>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2 best">
+                    <div class = "collection-img position-relative">
+                        <img src = "img/fic7.jpg" class = "w-100">
+                        <span class = "position-absolute text-white d-flex align-items-center justify-content-center salespan">10%</span>
+                    </div>
+                    <div class = "text-center">
+                        <div class = "rating mt-3">
+                            <span class = "pstar"><i class = "fas fa-star"></i></span>
+                            <span class = "pstar"><i class = "fas fa-star"></i></span>
+                            <span class = "pstar"><i class = "fas fa-star"></i></span>
+                            <span class = "pstar"><i class = "fas fa-star"></i></span>
+                            <span class = "pstar"><i class = "fas fa-star"></i></span>
+                        </div>
+                        <p class = "text-capitalize my-1">helena de esparta</p>
+                        <span class = "fw-bold">S/ 105.50</span>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2 feat">
+                    <div class = "collection-img position-relative">
+                        <img src = "img/fic8.jpg" class = "w-100">
+                        <span class = "position-absolute text-white d-flex align-items-center justify-content-center salespan">5%</span>
+                    </div>
+                    <div class = "text-center">
+                        <div class = "rating mt-3">
+                            <span class = "pstar"><i class = "fas fa-star"></i></span>
+                            <span class = "pstar"><i class = "fas fa-star"></i></span>
+                            <span class = "pstar"><i class = "fas fa-star"></i></span>
+                            <span class = "pstar"><i class = "fas fa-star"></i></span>
+                            <span class = "pstar"><i class = "fas fa-star"></i></span>
+                        </div>
+                        <p class = "text-capitalize my-1">el mentalista</p>
+                        <span class = "fw-bold">S/ 25.50</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+  <!-- end of libros -->
+  <!-- novedades -->
+  <section id = "novedades" class = "py-5">
+    <div class = "container">
+        <div class = "title text-center py-5">
+            <h2 class = "position-relative d-inline-block">Novedades</h2>
+        </div>
+
+        <div class = "special-list row g-0">
+            <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                <div class = "special-img position-relative overflow-hidden">
+                    <img src = "img/fic11.jpg" class = "w-100">
+                    <span class = "position-absolute d-flex align-items-center justify-content-center fs-4 pheart">
+                        <i class = "fas fa-heart"></i>
+                    </span>
+                </div>
+                <div class = "text-center">
+                    <p class = "text-capitalize mt-3 mb-1">aves sin nido</p>
+                    <span class = "fw-bold d-block">S/ 45.50</span>
+                    <a href = "#" class = "btn btn-primary mt-3">Añadir al carrito</a>
+                </div>
+            </div>
+
+            <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                <div class = "special-img position-relative overflow-hidden">
+                    <img src = "img/fic12.jpg" class = "w-100">
+                    <span class = "position-absolute d-flex align-items-center justify-content-center fs-4 pheart">
+                        <i class = "fas fa-heart"></i>
+                    </span>
+                </div>
+                <div class = "text-center">
+                    <p class = "text-capitalize mt-3 mb-1">el tatuador de auschwitz</p>
+                    <span class = "fw-bold d-block">S/ 45.50</span>
+                    <a href = "#" class = "btn btn-primary mt-3">Añadir al carrito</a>
+                </div>
+            </div>
+
+            <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                <div class = "special-img position-relative overflow-hidden">
+                    <img src = "img/fic9.jpg" class = "w-100">
+                    <span class = "position-absolute d-flex align-items-center justify-content-center fs-4 pheart">
+                        <i class = "fas fa-heart"></i>
+                    </span>
+                </div>
+                <div class = "text-center">
+                    <p class = "text-capitalize mt-3 mb-1">las tres hermanas</p>
+                    <span class = "fw-bold d-block">S/ 45.50</span>
+                    <a href = "#" class = "btn btn-primary mt-3">Añadir al carrito</a>
+                </div>
+            </div>
+
+            <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                <div class = "special-img position-relative overflow-hidden">
+                    <img src = "img/fic10.jpg" class = "w-100">
+                    <span class = "position-absolute d-flex align-items-center justify-content-center fs-4 pheart">
+                        <i class = "fas fa-heart"></i>
+                    </span>
+                </div>
+                <div class = "text-center">
+                    <p class = "text-capitalize mt-3 mb-1">el túnel</p>
+                    <span class = "fw-bold d-block">S/ 45.50</span>
+                    <a href = "#" class = "btn btn-primary mt-3">Añadir al carrito</a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+  <!-- end of novedades -->
+  <!-- destacados -->
+  <section id = "destacados" class = "py-5">
+    <div class = "container">
+        <div class = "title text-center pt-3 pb-5">
+            <h2 class = "position-relative d-inline-block ms-4">Recomendados</h2>
+        </div>
+
+        <div class = "row">
+            <div class = "col-md-6 col-lg-4 row g-3">
+                <h3 class = "fs-5">Más Leidos</h3>
+                <div class = "d-flex align-items-start justify-content-start">
+                    <img src = "img/fic14.jpg" alt = "" class = "img-fluid pe-3 w-25">
+                    <div>
+                        <p class = "text-capitalize mb-0">El gran Gatsby</p>
+                        <span>S/ 20.00</span>
+                    </div>
+                </div>
+                <div class = "d-flex align-items-start justify-content-start">
+                    <img src = "img/fic15.jpg" alt = "" class = "img-fluid pe-3 w-25">
+                    <div>
+                        <p class = "text-capitalize mb-0">Mariposas y Murciélagos</p>
+                        <span>S/ 20.00</span>
+                    </div>
+                </div>
+                <div class = "d-flex align-items-start justify-content-start">
+                    <img src = "img/fic16.jpg" alt = "" class = "img-fluid pe-3 w-25">
+                    <div>
+                        <p class = "text-capitalize mb-0">Los Ríos Profundos</p>
+                        <span>S/ 20.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "col-md-6 col-lg-4 row g-3">
+                <h3 class = "fs-5">Más vendidos</h3>
+                <div class = "d-flex align-items-start justify-content-start">
+                    <img src = "img/fic17.jpg" alt = "" class = "img-fluid pe-3 w-25">
+                    <div>
+                        <p class = "text-capitalize mb-0">Cómo hacer que te pasen cosas buenas</p>
+                        <span>S/ 20.00</span>
+                    </div>
+                </div>
+                <div class = "d-flex align-items-start justify-content-start">
+                    <img src = "img/fic18.jpg" alt = "" class = "img-fluid pe-3 w-25">
+                    <div>
+                        <p class = "text-capitalize mb-0">El club de las 5 de la mañana</p>
+                        <span>S/ 20.00</span>
+                    </div>
+                </div>
+                <div class = "d-flex align-items-start justify-content-start">
+                    <img src = "img/fic19.jpg" alt = "" class = "img-fluid pe-3 w-25">
+                    <div>
+                        <p class = "text-capitalize mb-0">Divertimente</p>
+                        <span>S/ 20.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "col-md-6 col-lg-4 row g-3">
+                <h3 class = "fs-5">Ofertas</h3>
+                <div class = "d-flex align-items-start justify-content-start">
+                    <img src = "img/fic20.jpg" alt = "" class = "img-fluid pe-3 w-25">
+                    <div>
+                        <p class = "text-capitalize mb-0">Miénteme si puedes</p>
+                        <span>S/ 20.00</span>
+                    </div>
+                </div>
+                <div class = "d-flex align-items-start justify-content-start">
+                    <img src = "img/fic21.jpg" alt = "" class = "img-fluid pe-3 w-25">
+                    <div>
+                        <p class = "text-capitalize mb-0">Padre rico Padre pobre</p>
+                        <span>S/ 20.00</span>
+                    </div>
+                </div>
+                <div class = "d-flex align-items-start justify-content-start">
+                    <img src = "img/fic22.jpg" alt = "" class = "img-fluid pe-3 w-25">
+                    <div>
+                        <p class = "text-capitalize mb-0">Libre del miedo</p>
+                        <span>S/ 20.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+  <!-- end of destacados -->
+  <!-- offers -->
+  <section id = "offers" class = "py-5">
+    <div class = "container">
+        <div class = "row d-flex align-items-start justify-content-center text-center">
+            <div class = "offers-content">
+                <span class = "text-black">Hasta 30% de descuento</span>
+                <h2 class = "mt-2 mb-4 text-black">Descubre la magia de la lectura</h2>
+                <a href = "#" class = "btn">Compra aquí</a>
+            </div>
+        </div>
+    </div>
+  </section>
+  <!-- end of offers -->
+  <!-- blogs -->
+  <section id = "blogs" class = "py-5">
+    <div class = "container">
+        <div class = "title text-center py-5">
+            <h2 class = "position-relative d-inline-block">Blogs</h2>
+        </div>
+
+        <div class = "row g-3">
+            <div class = "card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                <img src = "img/blog1.jpg" alt = "">
+                <div class = "card-body px-0">
+                    <h4 class = "card-title">Halloween y literatura</h4>
+                    <p class = "card-text mt-3 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aspernatur repudiandae nostrum dolorem molestias odio. Sit fugit adipisci omnis quia itaque ratione iusto sapiente reiciendis, numquam officiis aliquid ipsam fuga.</p>
+                    <p class = "card-text">
+                        <small class = "text-muted">
+                            <span class = "fw-bold">Author: </span>John Doe
+                        </small>
+                    </p>
+                    <a href = "#" class = "btn">Leer más</a>
+                </div>
+            </div>
+
+            <div class = "card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                <img src = "img/blog2.jpg" alt = "">
+                <div class = "card-body px-0">
+                    <h4 class = "card-title">Vuelve Robert D. Kaplan</h4>
+                    <p class = "card-text mt-3 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aspernatur repudiandae nostrum dolorem molestias odio. Sit fugit adipisci omnis quia itaque ratione iusto sapiente reiciendis, numquam officiis aliquid ipsam fuga.</p>
+                    <p class = "card-text">
+                        <small class = "text-muted">
+                            <span class = "fw-bold">Author: </span>John Doe
+                        </small>
+                    </p>
+                    <a href = "#" class = "btn">Leer más</a>
+                </div>
+            </div>
+
+            <div class = "card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                <img src = "img/blog4.jpg" alt = "">
+                <div class = "card-body px-0">
+                    <h4 class = "card-title">¡Cuentos para empezar el cole con buen pie!</h4>
+                    <p class = "card-text mt-3 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aspernatur repudiandae nostrum dolorem molestias odio. Sit fugit adipisci omnis quia itaque ratione iusto sapiente reiciendis, numquam officiis aliquid ipsam fuga.</p>
+                    <p class = "card-text">
+                        <small class = "text-muted">
+                            <span class = "fw-bold">Author: </span>John Doe
+                        </small>
+                    </p>
+                    <a href = "#" class = "btn">Leer más</a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+  <!-- end of blogs -->
+  <!-- newsletter -->
+  <section id = "newsletter" class = "py-5">
+    <div class = "container">
+        <div class = "d-flex flex-column align-items-center justify-content-center">
+            <div class = "title text-center pt-3 pb-5">
+                <h2 class = "position-relative d-inline-block ms-4">¡Únete a nuestra comunidad de <span class="spbook">Booklovers</span>!</h2>
+            </div>
+
+            <p class = "text-center text-muted">Suscribete y obtén el 15% de descuento en tu primera compra</p>
+            <div class = "input-group mb-3 mt-3">
+                <input type = "text" class = "form-control" placeholder="Ingresa tu email">
+                <button class = "btn btn-primary" type = "submit">Suscribirme</button>
+            </div>
+        </div>
+    </div>
+  </section>
+  <!-- end of newsletter -->
+  <!-- footer -->
+  <footer class = "bg-dark py-5">
+    <div class = "container">
+        <div class = "row text-white g-4">
+            <div class = "col-md-6 col-lg-3">
+                <a class = "text-uppercase text-decoration-none brand text-white" href = "index.html">3book</a>
+                <p class = "text-white text-muted mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum mollitia quisquam veniam odit cupiditate, ullam aut voluptas velit dolor ipsam?</p>
+            </div>
+
+            <div class = "col-md-6 col-lg-3">
+                <h5 class = "fw-light">Atención al cliente</h5>
+                <ul class = "list-unstyled">
+                    <li class = "my-3">
+                        <a href = "#" class = "text-white text-decoration-none text-muted">
+                            <i class = "fas fa-chevron-right me-1"></i>Políticas de Envio
+                        </a>
+                    </li>
+                    <li class = "my-3">
+                        <a href = "#" class = "text-white text-decoration-none text-muted">
+                            <i class = "fas fa-chevron-right me-1"></i>Políticas de Devoluciones
+                        </a>
+                    </li>
+                    <li class = "my-3">
+                        <a href = "#" class = "text-white text-decoration-none text-muted">
+                            <i class = "fas fa-chevron-right me-1"></i>Términos y Condiciones
+                        </a>
+                    </li>
+                    <li class = "my-3">
+                        <a href = "#" class = "text-white text-decoration-none text-muted">
+                            <i class = "fas fa-chevron-right me-1"></i> Libro de Reclamaciones
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class = "col-md-6 col-lg-3">
+                <h5 class = "fw-light mb-3">Contáctanos</h5>
+                <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
+                    <span class = "me-3">
+                        <i class = "fas fa-map-marked-alt"></i>
+                    </span>
+                    <span class = "fw-light">
+                        C.C. La Rambla Brasil Tda. 135B, Breña
+                    </span>
+                </div>
+                <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
+                    <span class = "me-3">
+                        <i class = "fas fa-envelope"></i>
+                    </span>
+                    <span class = "fw-light">
+                        atencion@3book.com
+                    </span>
+                </div>
+                <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
+                    <span class = "me-3">
+                        <i class = "fas fa-phone-alt"></i>
+                    </span>
+                    <span class = "fw-light">
+                        +1 6776 2363
+                    </span>
+                </div>
+            </div>
+
+            <div class = "col-md-6 col-lg-3">
+                <h5 class = "fw-light mb-3">Síguenos</h5>
+                <div>
+                    <ul class = "list-unstyled d-flex">
+                        <li>
+                            <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                <i class = "fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                <i class = "fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                <i class = "fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                <i class = "fab fa-pinterest"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="metodo-pago">
+                    <h5 class = "fw-light mb-3">Metodos de Pago</h5>
+                    <div>
+                        <img src="img/paymet.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p class="copyr"> &#169; 2015 - 2022 Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </div>
+  </footer>
+  <!-- end of footer -->
+  <!-- isotope js -->
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- custom js -->
+</body>
+</html>
